@@ -68,7 +68,7 @@ app.use((req,res,next)=>{
 passport.use(new LocalStrategy(User.authenticate()));
 
 // seeding database
-seedDB()
+// seedDB()
 
 app.use(productRoutes); //so that harr incoming request ke liye path check kiya jaae
 app.use(reviewRoutes);  //so that harr incoming request ke liye path check kiya jaae
